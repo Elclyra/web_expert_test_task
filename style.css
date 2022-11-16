@@ -1,0 +1,374 @@
+@charset "UTF-8";
+body {
+  background-color: #2B303A;
+}
+
+main {
+  margin-top: 100px;
+}
+
+main h1, main h2, main h3, main p, main li, main label {
+  color: #FFFFFF;
+  font-family: 'Sora';
+}
+
+main h1 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+main p, main li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+main hr {
+  color: #E9EDF4;
+  border-radius: 0px 0px 12px 2px;
+  opacity: 1;
+  margin: 20px -20px;
+}
+
+main a {
+  text-decoration: none;
+  color: #E1261C;
+}
+
+main a:hover {
+  color: #c91d14;
+}
+
+main .innerBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 40px;
+}
+
+main .innerBlock .innerText {
+  margin-right: 40px;
+  min-width: 380px;
+}
+
+main .innerBlock .innerText p, main .innerBlock .innerText h2 {
+  margin-bottom: 20px;
+}
+
+main .innerBlock .innerText ul {
+  padding-left: 30px;
+}
+
+main .innerBlock .innerText ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+main .innerBlock .innerText ul li .list-icon, main .innerBlock .innerText ul li .list-icon-w {
+  position: absolute;
+  height: 4px;
+  width: 16px;
+  top: 12px;
+  left: -25px;
+  background: -webkit-gradient(linear, left top, right top, from(#911812), to(#E1261C));
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+}
+
+main .innerBlock .innerText ul li .list-icon-w {
+  width: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#D3DAE8), to(#A7B7D8));
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+}
+
+@media (min-width: 1200px) {
+  main .innerBlock {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
+@media (max-width: 767px) {
+  main .mobileImgCover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  main .mobileImgCover .mobileImg {
+    margin-left: 0;
+  }
+}
+
+main .mobileImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 20px;
+  background-color: white;
+  height: 755px;
+  width: 320px;
+  margin-left: 88px;
+  position: relative;
+  -webkit-clip-path: polygon(0 20px, 20px 0, calc(100% - 20.00px) 0, 100% 20px, 100% calc(100% - 20.00px), calc(100% - 20.00px) 100%, 20px 100%, 0 calc(100% - 20.00px));
+          clip-path: polygon(0 20px, 20px 0, calc(100% - 20.00px) 0, 100% 20px, 100% calc(100% - 20.00px), calc(100% - 20.00px) 100%, 20px 100%, 0 calc(100% - 20.00px));
+}
+
+main .mobileImg h3, main .mobileImg p, main .mobileImg label, main .mobileImg span, main .mobileImg input {
+  color: #111317;
+  font-family: 'Sora';
+}
+
+main .mobileImg h3 {
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+main .mobileImg label {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+main .mobileImg label[for="average-income"]::after {
+  content: '€';
+  position: absolute;
+  top: 35px;
+  left: 257px;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  color: #111317;
+  font-weight: 700;
+  z-index: 2;
+}
+
+main .mobileImg label[for="sick-leave"]::after {
+  content: 'days';
+  position: absolute;
+  top: 35px;
+  left: 226px;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  color: #111317;
+  font-weight: 700;
+  z-index: 2;
+}
+
+main .mobileImg input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+main .mobileImg input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+main .mobileImg input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+main .mobileImg fieldset {
+  margin-bottom: 15px;
+}
+
+main .mobileImg input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 2px solid #A7B7D8;
+  border-radius: 4px;
+}
+
+main .mobileImg .input-cover {
+  height: 50px;
+  -webkit-box-shadow: 0px 2px 4px #0000001a;
+          box-shadow: 0px 2px 4px #0000001a;
+  background: -webkit-gradient(linear, left top, right top, from(#D3DAE8), to(#A7B7D8));
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  padding: 2px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+main .mobileImg .input-cover input {
+  height: 46px;
+  width: 100%;
+  margin: 0px;
+  border: 0;
+  border-radius: 2px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: 'Sora';
+}
+
+main .mobileImg .input-cover input:focus-visible {
+  outline: none;
+}
+
+main .mobileImg .btn-red {
+  width: 169px;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(#911812), to(#E1261C));
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  color: #fff;
+  font-family: 'Sora';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-shadow: 2px 2px 0px #00000066;
+  border-radius: 30px;
+  border: 0;
+}
+
+main .mobileImg .btn-red:hover {
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+}
+
+main .mobileImg .btn-red:active {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25), inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25), inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+main .mobileImg .calculations .calculation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+}
+
+main .mobileImg .calculations .calculation p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+main .mobileImg .calculations .calculation .comp-cash {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+main .mobileImg .calculations .calculation .disclaimer p, main .mobileImg .calculations .calculation .disclaimer span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #7A818E;
+  margin-bottom: 0;
+}
+
+main .mobileImg .results p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+
+main .mobileImg .results #total-comp-cash {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+main .mobileImg .testing-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .mobileImg .testing-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+main .mobileImg .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#D3DAE8), to(#A7B7D8));
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  border-radius: 4px;
+}
+
+main .mobileImg .checkmark::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+main .mobileImg .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+main .mobileImg .testing-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+main .mobileImg .testing-checkbox .checkmark:after {
+  left: 4px;
+  width: 14px;
+  height: 10px;
+  content: url(assets/check.svg);
+}
+/*# sourceMappingURL=style.css.map */
